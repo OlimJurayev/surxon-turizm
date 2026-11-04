@@ -73,3 +73,13 @@ function header(active) {
 }
 
 function objects() { return (window.OBYEKTLAR && window.OBYEKTLAR.features) || []; }
+
+// Wikimedia Commons fotosurati (muallif va litsenziya fayl sahifasida). Yuklanmasa — "FOTO" belgisi.
+function photoHtml(p, small) {
+  if (!p.foto) return `<div class="photo">FOTO</div>`;
+  const src = "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(p.foto) + "?width=" + (small ? 360 : 640);
+  const page = "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(p.foto);
+  return `<figure style="margin:0"><div class="photo"><img src="${src}" alt="${p.foto_izoh || field(p, "nomi")}" loading="lazy"
+    onerror="this.parentNode.textContent='FOTO'"></div>
+    <figcaption class="credit">${p.foto_izoh ? p.foto_izoh + " · " : ""}Foto: <a href="${page}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>`;
+}

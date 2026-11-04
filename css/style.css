@@ -92,3 +92,6 @@ footer.site a { color: #fff; }
   nav.main { gap: 12px; }
 }
 .leaflet-popup-content a.btn { color: var(--navy); }
+.credit { font-size: 12px; color: var(--muted); padding: 4px 18px 0; }
+.leaflet-popup-content .photo { aspect-ratio: 16/9; margin-bottom: 4px; border-radius: 6px; overflow: hidden; }
+.leaflet-popup-content .credit { padding: 0 0 4px; }

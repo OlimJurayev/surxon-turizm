@@ -19,7 +19,7 @@ window.pageRender = () => {
     const items = objects().filter(f => f.properties.klaster === k).map(f => {
       const p = f.properties;
       const warn = !f.geometry ? `<span class="badge-warn">${t("no_coords")}</span>` : (p.aniqlik === "taxminiy" ? `<span class="badge-warn">${t("approx")}</span>` : "");
-      return `<article class="card obj"><div class="photo">FOTO</div><div class="bar" style="background:${c.color}"></div><div class="body">
+      return `<article class="card obj">${photoHtml(p)}<div class="bar" style="background:${c.color}"></div><div class="body">
         <h3>${field(p,"nomi")}</h3><div class="meta">${p.tuman}${p.davr && p.davr!=="–" ? " · "+p.davr : ""} ${warn}</div>
         <p>${field(p,"tavsif")}</p><p class="src">${t("source")}: <a href="${p.manba}" target="_blank" rel="noopener">${new URL(p.manba).hostname}</a></p></div></article>`;
     }).join("");

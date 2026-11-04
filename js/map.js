@@ -16,7 +16,7 @@ function popupHtml(f) {
   const p = f.properties, c = CLUSTERS[p.klaster];
   const approx = p.aniqlik === "taxminiy" ? `<p><span class="badge-warn">${t("approx")}</span></p>` : "";
   const [lon, lat] = f.geometry.coordinates;
-  return `<span class="tag" style="background:${c.color}">${cname(p.klaster)}</span>
+  return `${p.foto ? photoHtml(p, true) : ""}<span class="tag" style="background:${c.color}">${cname(p.klaster)}</span>
     <h4>${field(p, "nomi")}</h4>
     <div style="font-size:13px;color:#5b6170">${p.tuman}${p.davr && p.davr !== "–" ? " · " + t("period") + ": " + p.davr : ""}</div>
     <p style="margin:8px 0">${field(p, "tavsif")}</p>${approx}
