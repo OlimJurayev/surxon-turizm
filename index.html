@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bosh sahifa · SURXON</title>
+<meta name="description" content="Surxondaryo viloyati turizm salohiyatini raqamli targ‘ib qilish tizimi — ilmiy prototip.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="data/obyektlar.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<main id="main">
+<section class="hero"><div class="strata" aria-hidden="true"><div style="background:var(--etn);width:100%"></div><div style="background:var(--eko);width:86%"></div><div style="background:var(--zi);width:72%"></div><div style="background:var(--bud);width:58%"></div></div><div class="wrap">
+  <div class="eyebrow" data-i18n="slogan"></div>
+  <h1 data-i18n="hero_title"></h1>
+  <p data-i18n="hero_text"></p>
+  <a class="btn" href="xarita.html" data-i18n="open_map"></a><a class="btn ghost" href="marshrutlar.html" data-i18n="see_routes"></a>
+</div></section>
+<section class="block"><div class="wrap">
+  <h2 data-i18n="choose_dir"></h2>
+  <div class="grid4" id="clusters"></div>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap">
+  <h2 data-i18n="in_numbers"></h2>
+  <div class="stats">
+    <div class="stat"><b>561</b><span id="s1"></span></div>
+    <div class="stat"><b>444</b><span id="s2"></span></div>
+    <div class="stat"><b>103</b><span id="s3"></span></div>
+    <div class="stat"><b>945,5 ga</b><span id="s4"></span></div>
+  </div>
+  <p class="src" id="srcline"></p>
+</div></section>
+</main>
+<script>
+header("index.html");
+const S = {
+  s1: {uz:"moddiy madaniy meros obyekti (01.01.2023)", en:"tangible cultural heritage sites (1 Jan 2023)", ru:"объектов материального культурного наследия (01.01.2023)"},
+  s2: {uz:"ulardan arxeologiya yodgorliklari", en:"of them archaeological monuments", ru:"из них археологических памятников"},
+  s3: {uz:"joylashtirish vositasi (2025)", en:"accommodation facilities (2025)", ru:"средств размещения (2025)"},
+  s4: {uz:"uchta yangi turistik markaz maydoni", en:"area of three new tourist centres", ru:"площадь трёх новых туристических центров"},
+  src: {uz:"Manbalar: Statistika agentligi; PQ-439, 16.12.2024.", en:"Sources: Statistics Agency of Uzbekistan; Resolution PQ-439, 16.12.2024.", ru:"Источники: Агентство статистики; ПП-439 от 16.12.2024."}
+};
+window.pageRender = () => {
+  document.getElementById("clusters").innerHTML = Object.entries(CLUSTERS).map(([k, c]) => {
+    const n = objects().filter(f => f.properties.klaster === k).length;
+    return `<a class="card" href="yonalishlar.html#${k}"><div class="photo"><img src="img/${k}.svg" alt="" style="width:46%;height:auto;object-fit:contain"></div><div class="bar" style="background:${c.color}"></div>
+      <div class="body"><h3 style="color:${c.color}">${cname(k)}</h3><p>${n} ${LANG==="uz"?"ta obyekt":LANG==="ru"?"объектов":"sites"}</p></div></a>`;
+  }).join("");
+  ["s1","s2","s3","s4"].forEach(id => document.getElementById(id).textContent = S[id][LANG]);
+  document.getElementById("srcline").textContent = S.src[LANG];
+};
+render();
+</script>
+</body></html>

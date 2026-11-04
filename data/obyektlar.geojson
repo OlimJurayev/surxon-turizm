@@ -1,0 +1,395 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.188027,
+     37.286265
+    ]
+   },
+   "properties": {
+    "id": 1,
+    "klaster": "bud",
+    "nomi_uz": "Fayoztepa",
+    "nomi_en": "Fayaz Tepe",
+    "nomi_ru": "Фаязтепа",
+    "tuman": "Termiz tumani",
+    "aniqlik": "aniq",
+    "davr": "I–IV asrlar",
+    "tavsif_uz": "Termiz vohasidagi buddaviy ibodatxona va monastir majmuasi; devoriy suratlar va Budda haykallari topilgan.",
+    "tavsif_en": "Buddhist temple and monastery complex in the Termez oasis, known for wall paintings and Buddha sculptures.",
+    "tavsif_ru": "Буддийский храмово-монастырский комплекс в Термезском оазисе; найдены настенные росписи и скульптуры Будды.",
+    "manba": "https://en.wikipedia.org/wiki/Fayaz_Tepe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.182916,
+     37.278239
+    ]
+   },
+   "properties": {
+    "id": 2,
+    "klaster": "bud",
+    "nomi_uz": "Qoratepa",
+    "nomi_en": "Kara Tepe",
+    "nomi_ru": "Каратепа",
+    "tuman": "Termiz tumani",
+    "aniqlik": "aniq",
+    "davr": "I–V asrlar",
+    "tavsif_uz": "Budda haykallari uchun tokchali monastir majmualari, devoriy suratlar va yozuvlar saqlangan.",
+    "tavsif_en": "Buddhist monastic complexes with niches for Buddha statues, wall paintings and inscriptions.",
+    "tavsif_ru": "Буддийские монастырские комплексы с нишами для статуй Будды, росписями и надписями.",
+    "manba": "https://en.wikipedia.org/wiki/Kara_Tepe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0999,
+     37.2319
+    ]
+   },
+   "properties": {
+    "id": 3,
+    "klaster": "bud",
+    "nomi_uz": "Zurmala stupasi",
+    "nomi_en": "Zurmala Stupa",
+    "nomi_ru": "Ступа Зурмала",
+    "tuman": "Termiz tumani",
+    "aniqlik": "aniq",
+    "davr": "I–II asrlar",
+    "tavsif_uz": "Termiz tumanidagi eng yirik buddaviy stupa qoldig‘i (balandligi taxminan 13,5 m); mamlakatdagi eng qadimgi saqlanib qolgan inshootlardan biri.",
+    "tavsif_en": "Remains of the largest Buddhist stupa in the Termez area (about 13.5 m high), among the oldest standing structures in the country.",
+    "tavsif_ru": "Остатки крупнейшей буддийской ступы Термезского района (около 13,5 м), одно из древнейших сохранившихся сооружений страны.",
+    "manba": "https://en.wikipedia.org/wiki/Zurmala_Stupa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0282,
+     37.4105
+    ]
+   },
+   "properties": {
+    "id": 4,
+    "klaster": "bud",
+    "nomi_uz": "Kampirtepa",
+    "nomi_en": "Kampir Tepe",
+    "nomi_ru": "Кампыртепа",
+    "tuman": "Termizdan shimoli-g‘arbda",
+    "aniqlik": "aniq",
+    "davr": "mil. av. IV – mil. II asrlar",
+    "tavsif_uz": "Amudaryo bo‘yidagi qal’a-shahar va daryo porti; Ptolemey tilga olgan «Oks bo‘yidagi Aleksandriya» deb taxmin qilinadi.",
+    "tavsif_en": "Fortified town and river port on the Amu Darya, thought to be Ptolemy’s Alexandria on the Oxus.",
+    "tavsif_ru": "Город-крепость и речной порт на Амударье; предполагаемая Александрия Оксианская Птолемея.",
+    "manba": "https://en.wikipedia.org/wiki/Kampir_Tepe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.9,
+     38.267
+    ]
+   },
+   "properties": {
+    "id": 5,
+    "klaster": "bud",
+    "nomi_uz": "Dalvarzintepa",
+    "nomi_en": "Dalverzin Tepe",
+    "nomi_ru": "Дальварзинтепа",
+    "tuman": "Denov yaqinida",
+    "aniqlik": "taxminiy",
+    "davr": "mil. av. III – mil. VIII asrlar",
+    "tavsif_uz": "Kushonlar davrining yirik shahri, ikki buddaviy ibodatxona qoldiqlari; 1972-yilda 115 ta oltin buyumdan iborat xazina topilgan.",
+    "tavsif_en": "Major Kushan-era town with two Buddhist temples; a treasure of 115 gold objects was found here in 1972.",
+    "tavsif_ru": "Крупный город кушанской эпохи с двумя буддийскими храмами; в 1972 году найден клад из 115 золотых предметов.",
+    "manba": "https://en.wikipedia.org/wiki/Dalverzin_Tepe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.2828,
+     37.2442
+    ]
+   },
+   "properties": {
+    "id": 6,
+    "klaster": "bud",
+    "nomi_uz": "Termiz arxeologiya muzeyi",
+    "nomi_en": "Archaeological Museum of Termez",
+    "nomi_ru": "Археологический музей Термеза",
+    "tuman": "Termiz shahri",
+    "aniqlik": "aniq",
+    "davr": "–",
+    "tavsif_uz": "Yunon-Baqtriya va Kushon davri topilmalari hamda atrofdagi yodgorliklar maketlari namoyish etiladi.",
+    "tavsif_en": "Displays Graeco-Bactrian and Kushan-period finds and scale models of nearby archaeological sites.",
+    "tavsif_ru": "Экспонаты греко-бактрийского и кушанского периодов и макеты окрестных памятников.",
+    "manba": "https://en.wikipedia.org/wiki/Archaeological_Museum_of_Termez"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.18921,
+     37.26585
+    ]
+   },
+   "properties": {
+    "id": 7,
+    "klaster": "zi",
+    "nomi_uz": "Al-Hakim at-Termiziy majmuasi",
+    "nomi_en": "Hakim at-Termizi Memorial Complex",
+    "nomi_ru": "Мемориальный комплекс Хаким ат-Термизи",
+    "tuman": "Termiz tumani",
+    "aniqlik": "aniq",
+    "davr": "IX–XV asrlar",
+    "tavsif_uz": "Mutasavvif olim Abu Abdulloh Muhammad Hakim Termiziy maqbarasi, masjid va xonaqohdan iborat yirik ziyoratgoh.",
+    "tavsif_en": "Shrine of the Sufi scholar Hakim at-Termizi with a mosque, mausoleum and retreat rooms; a major pilgrimage site.",
+    "tavsif_ru": "Мавзолей суфийского учёного Хакима ат-Термизи с мечетью и худжрами; крупное место паломничества.",
+    "manba": "https://en.wikipedia.org/wiki/Termizi_Memorial_Complex"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "id": 8,
+    "klaster": "zi",
+    "nomi_uz": "Sulton Saodat majmuasi",
+    "nomi_en": "Sultan Saodat Ensemble",
+    "nomi_ru": "Ансамбль Султан Саодат",
+    "tuman": "Termiz shahri chekkasi",
+    "aniqlik": "kiritilmagan",
+    "davr": "X–XVII asrlar",
+    "tavsif_uz": "Termiz sayyidlari sulolasining xilxonasi: maqbaralar, masjidlar va xonaqohlar ansambli.",
+    "tavsif_en": "Burial ensemble of the Termez sayyids: mausoleums, mosques and khanqahs.",
+    "tavsif_ru": "Некрополь термезских сейидов: мавзолеи, мечети и ханака.",
+    "manba": "https://en.wikipedia.org/wiki/Sultan_Saodat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.29,
+     37.2666
+    ]
+   },
+   "properties": {
+    "id": 9,
+    "klaster": "zi",
+    "nomi_uz": "Qirqqiz qal’asi",
+    "nomi_en": "Qirqqiz Fortress",
+    "nomi_ru": "Крепость Кыркыз",
+    "tuman": "Termiz tumani",
+    "aniqlik": "aniq",
+    "davr": "IX–XV asrlar",
+    "tavsif_uz": "Ikki qavatli to‘rtburchak inshoot qoldiqlari (taxminan 53×55 m); asl vazifasi haqida turli farazlar mavjud.",
+    "tavsif_en": "Ruins of a two-storey square building (about 53×55 m) whose original purpose is still debated.",
+    "tavsif_ru": "Руины двухэтажного квадратного здания (около 53×55 м); назначение до сих пор обсуждается.",
+    "manba": "https://en.wikipedia.org/wiki/Qirqqiz_Fortress"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "id": 10,
+    "klaster": "zi",
+    "nomi_uz": "Ko‘kildor ota xonaqohi",
+    "nomi_en": "Kokildor Ota Khanqah",
+    "nomi_ru": "Ханака Кокильдор-ата",
+    "tuman": "Termiz shahri",
+    "aniqlik": "kiritilmagan",
+    "davr": "XVI asr",
+    "tavsif_uz": "Abdullaxon II davrida sayyoh darveshlar uchun qurilgan xonaqoh.",
+    "tavsif_en": "16th-century khanqah built under Abdullah Khan II as a lodging for travelling dervishes.",
+    "tavsif_ru": "Ханака XVI века, построенная при Абдулла-хане II для странствующих дервишей.",
+    "manba": "https://en.wikipedia.org/wiki/Termez"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.41667,
+     37.50833
+    ]
+   },
+   "properties": {
+    "id": 11,
+    "klaster": "zi",
+    "nomi_uz": "Jarqo‘rg‘on minorasi",
+    "nomi_en": "Jarkurgan Minaret",
+    "nomi_ru": "Джаркурганский минарет",
+    "tuman": "Jarqo‘rg‘on tumani, Minor qishlog‘i",
+    "aniqlik": "taxminiy",
+    "davr": "1108–1109-yillar",
+    "tavsif_uz": "Sulton Sanjar davrida qurilgan g‘ishtin minora; hozirgi balandligi taxminan 21,6 m.",
+    "tavsif_en": "Brick minaret built in 1108–1109 under Sultan Sanjar; now about 21.6 m high.",
+    "tavsif_ru": "Кирпичный минарет 1108–1109 гг. времён султана Санджара; высота около 21,6 м.",
+    "manba": "https://en.wikipedia.org/wiki/Jarkurgan_minaret"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.9,
+     38.267
+    ]
+   },
+   "properties": {
+    "id": 12,
+    "klaster": "zi",
+    "nomi_uz": "Said Otaliq madrasasi",
+    "nomi_en": "Sayyid Atalik Madrasa",
+    "nomi_ru": "Медресе Сейид Аталык",
+    "tuman": "Denov shahri",
+    "aniqlik": "taxminiy",
+    "davr": "XVI asr",
+    "tavsif_uz": "Markaziy Osiyodagi yirik madrasalardan biri; tarixiy yodgorlik sifatida tashrif uchun ochiq.",
+    "tavsif_en": "One of the largest madrasas in Central Asia, now a historic monument open to visitors.",
+    "tavsif_ru": "Одно из крупнейших медресе Центральной Азии, ныне памятник истории.",
+    "manba": "https://en.wikipedia.org/wiki/Denov"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.2,
+     38.2
+    ]
+   },
+   "properties": {
+    "id": 13,
+    "klaster": "etn",
+    "nomi_uz": "Boysun",
+    "nomi_en": "Boysun",
+    "nomi_ru": "Байсун",
+    "tuman": "Boysun tumani",
+    "aniqlik": "aniq",
+    "davr": "–",
+    "tavsif_uz": "Taxminan 5000 yillik aholi yashash tarixiga ega shahar; Boysun madaniy makoni va «Boysun bahori» folklor festivali bilan mashhur.",
+    "tavsif_en": "Town with about 5,000 years of settlement history, known for the Boysun cultural space and the Boysun Bahori folk festival.",
+    "tavsif_ru": "Город с примерно 5000-летней историей, известный культурным пространством Байсуна и фестивалем «Бойсун бахори».",
+    "manba": "https://en.wikipedia.org/wiki/Boysun"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "id": 14,
+    "klaster": "eko",
+    "nomi_uz": "Teshiktosh g‘ori",
+    "nomi_en": "Teshik-Tash Cave",
+    "nomi_ru": "Пещера Тешик-Таш",
+    "tuman": "Boysun tumani, Boysuntog‘",
+    "aniqlik": "kiritilmagan",
+    "davr": "–",
+    "tavsif_uz": "1938-yilda A. P. Okladnikov bu yerda neandertal bola qoldiqlarini topgan.",
+    "tavsif_en": "In 1938 A. P. Okladnikov found the remains of a Neanderthal child here.",
+    "tavsif_ru": "В 1938 году А. П. Окладников обнаружил здесь останки ребёнка-неандертальца.",
+    "manba": "https://en.wikipedia.org/wiki/Teshik-Tash_1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "id": 15,
+    "klaster": "eko",
+    "nomi_uz": "Sangardak sharsharasi",
+    "nomi_en": "Sangardak Waterfall",
+    "nomi_ru": "Водопад Сангардак",
+    "tuman": "Sariosiyo tumani",
+    "aniqlik": "kiritilmagan",
+    "davr": "–",
+    "tavsif_uz": "Sariosiyo tumanidagi tog‘ sharsharasi; ekoturizm va sog‘lomlashtirish yo‘nalishi.",
+    "tavsif_en": "Mountain waterfall in Sariosiyo district; an eco- and wellness-tourism destination.",
+    "tavsif_ru": "Горный водопад в Сариасийском районе; направление эко- и оздоровительного туризма.",
+    "manba": "https://gov.uz/oz/uzbektourism/news/view/134221"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "id": 16,
+    "klaster": "eko",
+    "nomi_uz": "«Omonxona» turistik markazi",
+    "nomi_en": "Omonxona Tourist Centre",
+    "nomi_ru": "Туристический центр «Омонхона»",
+    "tuman": "Boysun tumani",
+    "aniqlik": "kiritilmagan",
+    "davr": "–",
+    "tavsif_uz": "PQ-439 qarori bilan tashkil etilgan 220,5 gektarlik turistik markaz.",
+    "tavsif_en": "220.5-hectare tourist centre established by Presidential Resolution PQ-439.",
+    "tavsif_ru": "Туристический центр площадью 220,5 га, созданный постановлением ПП-439.",
+    "manba": "https://lex.uz/docs/7263277"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "id": 17,
+    "klaster": "eko",
+    "nomi_uz": "«Sangardak» turistik markazi",
+    "nomi_en": "Sangardak Tourist Centre",
+    "nomi_ru": "Туристический центр «Сангардак»",
+    "tuman": "Sariosiyo tumani",
+    "aniqlik": "kiritilmagan",
+    "davr": "–",
+    "tavsif_uz": "PQ-439 qarori bilan tashkil etilgan 615 gektarlik turistik markaz.",
+    "tavsif_en": "615-hectare tourist centre established by Presidential Resolution PQ-439.",
+    "tavsif_ru": "Туристический центр площадью 615 га, созданный постановлением ПП-439.",
+    "manba": "https://lex.uz/docs/7263277"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "id": 18,
+    "klaster": "eko",
+    "nomi_uz": "«Obihayot» turistik markazi",
+    "nomi_en": "Obihayot Tourist Centre",
+    "nomi_ru": "Туристический центр «Обиҳаёт»",
+    "tuman": "Jarqo‘rg‘on tumani, Oqtepa suv ombori",
+    "aniqlik": "kiritilmagan",
+    "davr": "–",
+    "tavsif_uz": "Oqtepa suv ombori bo‘yida PQ-439 qarori bilan tashkil etilgan 110 gektarlik turistik markaz.",
+    "tavsif_en": "110-hectare tourist centre on the Oqtepa reservoir, established by Presidential Resolution PQ-439.",
+    "tavsif_ru": "Туристический центр площадью 110 га у Октепинского водохранилища, созданный постановлением ПП-439.",
+    "manba": "https://lex.uz/docs/7263277"
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xarita · SURXON</title>
+<meta name="description" content="Surxondaryo viloyati turizm salohiyatini raqamli targ‘ib qilish tizimi — ilmiy prototip.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<script src="vendor/leaflet/leaflet.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="data/obyektlar.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<main id="main" class="mapwrap">
+  <aside class="side">
+    <input type="search" id="q" data-i18n-ph="search" aria-label="Qidiruv">
+    <div class="chips" id="chips" role="group" aria-label="Yo‘nalishlar"></div>
+    <div class="eyebrow" style="color:#7a7f8a" data-i18n="results"></div>
+    <div class="list" id="list"></div>
+  </aside>
+  <div id="map" role="region" aria-label="Interaktiv xarita"></div>
+</main>
+<script src="js/map.js"></script>
+</body></html>

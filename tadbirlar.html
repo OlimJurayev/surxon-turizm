@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadbirlar · SURXON</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="data/obyektlar.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<main id="main" class="wrap" style="padding:32px 20px">
+<h2 data-i18n="nav_events"></h2>
+<div class="route" style="border-left-color:var(--etn)"><span class="tag" style="background:var(--etn)" id="tg"></span>
+<h3 style="margin:10px 0 4px">«Boysun bahori»</h3><p id="ev1"></p><p class="src"><span data-i18n="source"></span>: <a href="https://gov.uz/oz/uzbektourism/news/view/134221" target="_blank" rel="noopener">gov.uz</a></p></div>
+<p style="color:#5b6170" id="note"></p>
+</main>
+<script>
+header("tadbirlar.html");
+const E = {
+  ev1:{uz:"Boysun tumanidagi an’anaviy folklor festivali. Tadbir sanasi rasmiy e’lon qilingach shu yerda ko‘rsatiladi.",en:"Traditional folk festival in Boysun district. The date will be shown here once officially announced.",ru:"Традиционный фольклорный фестиваль в Байсунском районе. Дата будет указана после официального объявления."},
+  note:{uz:"Tadbirlar taqvimi viloyat turizm bo‘limi va hokimlikning rasmiy e’lonlari asosida to‘ldiriladi.",en:"The events calendar is filled from official announcements of the regional tourism office and administration.",ru:"Календарь событий заполняется на основе официальных объявлений."}
+};
+window.pageRender = () => { document.getElementById("tg").textContent = cname("etn"); ["ev1","note"].forEach(k => document.getElementById(k).textContent = E[k][LANG]); };
+render();
+</script>
+</body></html>

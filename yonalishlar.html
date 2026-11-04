@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yo‘nalishlar · SURXON</title>
+<meta name="description" content="Surxondaryo viloyati turizm salohiyatini raqamli targ‘ib qilish tizimi — ilmiy prototip.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="data/obyektlar.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<main id="main" class="wrap" style="padding-top:28px"><div id="sections"></div></main>
+<script>
+header("yonalishlar.html");
+window.pageRender = () => {
+  document.getElementById("sections").innerHTML = Object.entries(CLUSTERS).map(([k, c]) => {
+    const items = objects().filter(f => f.properties.klaster === k).map(f => {
+      const p = f.properties;
+      const warn = !f.geometry ? `<span class="badge-warn">${t("no_coords")}</span>` : (p.aniqlik === "taxminiy" ? `<span class="badge-warn">${t("approx")}</span>` : "");
+      return `<article class="card obj"><div class="photo">FOTO</div><div class="bar" style="background:${c.color}"></div><div class="body">
+        <h3>${field(p,"nomi")}</h3><div class="meta">${p.tuman}${p.davr && p.davr!=="–" ? " · "+p.davr : ""} ${warn}</div>
+        <p>${field(p,"tavsif")}</p><p class="src">${t("source")}: <a href="${p.manba}" target="_blank" rel="noopener">${new URL(p.manba).hostname}</a></p></div></article>`;
+    }).join("");
+    return `<section class="block" id="${k}" style="padding-top:20px"><h2 style="color:${c.color}"><img src="img/${k}.svg" alt="" style="width:44px;display:inline-block;vertical-align:middle;margin-right:8px">${cname(k)}</h2><div class="objs">${items}</div></section>`;
+  }).join("");
+};
+render();
+if (location.hash) setTimeout(() => document.querySelector(location.hash)?.scrollIntoView(), 50);
+</script>
+</body></html>

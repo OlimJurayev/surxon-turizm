@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marshrutlar · SURXON</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="data/obyektlar.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<main id="main" class="wrap" style="padding:32px 20px">
+<h2 data-i18n="nav_routes"></h2>
+<p id="intro" style="color:#5b6170;max-width:760px"></p>
+<div id="routes"></div>
+</main>
+<script>
+header("marshrutlar.html");
+const ROUTES = [
+  { k:"bud", ids:[6,1,2,3,4], name:{uz:"Termiz: buddaviylik merosi kuni",en:"Termez: a day of Buddhist heritage",ru:"Термез: день буддийского наследия"} },
+  { k:"zi", ids:[7,8,9,10], name:{uz:"Termiz: ziyorat yo‘nalishi",en:"Termez: pilgrimage route",ru:"Термез: паломнический маршрут"} },
+  { k:"etn", ids:[11,5,12,13], name:{uz:"Shimoliy Surxon: minoralardan Boysungacha",en:"Northern Surkhan: from minarets to Boysun",ru:"Северный Сурхан: от минаретов до Байсуна"} },
+];
+const INTRO = {uz:"Tayyor yo‘nalishlar ma’lumotlar bazasidagi obyektlar asosida tuzilgan. Masofa ikki nuqta orasidagi to‘g‘ri chiziq bo‘yicha taxminan hisoblangan; yo‘l masofasi bundan uzunroq bo‘ladi.",
+  en:"Ready-made routes are built from the sites in the database. Distances are straight-line estimates between points; road distances are longer.",
+  ru:"Маршруты составлены из объектов базы данных. Расстояния — по прямой между точками; по дорогам они больше."};
+function km(a, b) { const R=6371, toR=x=>x*Math.PI/180; const [lo1,la1]=a, [lo2,la2]=b;
+  const d=Math.sin(toR(la2-la1)/2)**2+Math.cos(toR(la1))*Math.cos(toR(la2))*Math.sin(toR(lo2-lo1)/2)**2; return 2*R*Math.asin(Math.sqrt(d)); }
+window.pageRender = () => {
+  document.getElementById("intro").textContent = INTRO[LANG];
+  const byId = Object.fromEntries(objects().map(f => [f.properties.id, f]));
+  document.getElementById("routes").innerHTML = ROUTES.map(r => {
+    const c = CLUSTERS[r.k];
+    let prev = null;
+    const li = r.ids.map(id => { const f = byId[id]; let d = "";
+      if (prev && prev.geometry && f.geometry) d = ` <small style="color:#5b6170">(~${km(prev.geometry.coordinates, f.geometry.coordinates).toFixed(0)} km)</small>`;
+      prev = f; return `<li><b>${field(f.properties,"nomi")}</b>${d}<br><small>${field(f.properties,"tavsif")}</small></li>`; }).join("");
+    return `<div class="route" style="border-left-color:${c.color}"><span class="tag" style="background:${c.color}">${cname(r.k)}</span><h3 style="margin:10px 0 0">${r.name[LANG]}</h3><ol>${li}</ol></div>`;
+  }).join("");
+};
+render();
+</script>
+</body></html>

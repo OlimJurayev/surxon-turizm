@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amaliy ma’lumot · SURXON</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="data/obyektlar.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<main id="main" class="wrap" style="padding:32px 20px">
+<h2 data-i18n="nav_info"></h2>
+<div class="grid4" id="cards"></div>
+</main>
+<script>
+header("amaliy.html");
+const C = [
+  {h:{uz:"Qanday yetib borish",en:"Getting there",ru:"Как добраться"}, p:{uz:"Viloyat markazi Termiz shahriga havo va temir yo‘l orqali borish mumkin. Reyslar va poyezdlar jadvalini tashuvchilarning rasmiy saytlaridan tekshiring.",en:"Termez, the regional centre, is reachable by air and rail. Check schedules on the carriers’ official websites.",ru:"До Термеза можно добраться самолётом и поездом. Расписание уточняйте на официальных сайтах перевозчиков."}},
+  {h:{uz:"Joylashish",en:"Where to stay",ru:"Где остановиться"}, p:{uz:"2025-yilda viloyatda 103 ta joylashtirish vositasi faoliyat yuritgan (Statistika agentligi). Bandlovni rasmiy platformalar orqali amalga oshiring.",en:"In 2025 the region had 103 accommodation facilities (Statistics Agency). Book through official platforms.",ru:"В 2025 году в области работало 103 средства размещения (Агентство статистики). Бронируйте через официальные платформы."}},
+  {h:{uz:"Tashrif odobi",en:"Visitor etiquette",ru:"Правила посещения"}, p:{uz:"Ziyoratgohlarda kiyinish va xulq qoidalariga rioya qiling; arxeologik yodgorliklarda belgilangan yo‘laklardan chiqmang.",en:"Respect dress and behaviour rules at shrines; stay on marked paths at archaeological sites.",ru:"Соблюдайте правила одежды и поведения в святынях; не сходите с обозначенных троп на памятниках."}},
+  {h:{uz:"Rasmiy turistik ma’lumot",en:"Official tourist information",ru:"Официальная туристическая информация"}, p:{uz:"Milliy turistik portal: uzbekistan.travel",en:"National tourism portal: uzbekistan.travel",ru:"Национальный туристический портал: uzbekistan.travel"}, link:"https://uzbekistan.travel/en/i/termez-en"},
+];
+window.pageRender = () => {
+  document.getElementById("cards").innerHTML = C.map(c => `<div class="card"><div class="bar" style="background:var(--navy)"></div><div class="body"><h3>${c.h[LANG]}</h3><p>${c.p[LANG]}${c.link ? ` <a href="${c.link}" target="_blank" rel="noopener">↗</a>` : ""}</p></div></div>`).join("");
+};
+render();
+</script>
+</body></html>
